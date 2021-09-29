@@ -1,0 +1,27 @@
+<html>
+<body>
+<pre>
+
+sim_cache 32 1536 3 0 8192 8 gcc_trace.txt        // Test odd set-associativity. Test a different block size (other than 16B).
+Name of validation run:  extra.1.val.txt
+Name of debug run:   extra.1.debug.txt
+
+sim_cache 16 1024 64 0 0 0 gcc_trace.txt       // Test a fully-associative cache.
+Name of validation run:  extra.2.val.txt
+Name of debug run:   extra.2.debug.txt
+
+sim_cache 16 1024 2 0 0 0 perl_trace.txt         // Test a different trace (perl), for just L1 with same config as before.
+Name of validation run:  extra.3.val.txt
+Name of debug run:   extra.3.debug.txt
+
+sim_cache 16 1024 2 16 8192 4 vortex_trace.txt  // Test a different trace (vortex), for L1+VC and L2 of same config as before.
+Name of validation run:  extra.4.val.txt
+Name of debug run:   extra.4.debug.txt
+
+sim_cache 32 512 1 7 0 0 go_trace.txt             // Test a different trace with L1+VC of different config. Small, direct-mapped L1 and odd assoc. for VC.
+Name of validation run:  extra.5.val.txt
+Name of debug run:   extra.5.debug.txt
+
+</pre>
+</body>
+</html>
