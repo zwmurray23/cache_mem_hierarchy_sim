@@ -13,6 +13,13 @@
  *  I implemented my design using a vector of vectors
  *  which contained "blocks"
  *
+ *
+ *  This code was developed with time as a limiting constraint.
+ *  Forgive "quick fixes" where possible. I am reworking code
+ *  as time permits to make it more clean, readable, and
+ *  efficient.
+ *
+ *
  ****************************************************************/
 
 
